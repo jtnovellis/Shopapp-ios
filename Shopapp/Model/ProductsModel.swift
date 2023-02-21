@@ -20,15 +20,7 @@ struct Product: Codable {
 
 struct Category: Codable {
     let id: Int
-    let name: Name
+    let name: String
     let image: String
     let creationAt, updatedAt: String
-}
-
-enum Name: String, Codable {
-    case clothes = "Clothes"
-    case electronics = "Electronics"
-    case furniture = "Furniture"
-    case others = "Others"
-    case shoes = "Shoes"
 }

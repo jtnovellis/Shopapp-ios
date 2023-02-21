@@ -21,7 +21,7 @@ struct ProductDetailView: View {
             HStack{
                 Text("Price: \(product.price)")
                 Spacer()
-                Text("Category: \(product.category.name.rawValue)")
+                Text("Category: \(product.category.name)")
             }.padding()
             Divider()
             VStack(alignment: .leading) {
@@ -42,6 +42,6 @@ struct ProductDetailView_Previews: PreviewProvider {
             "https://placeimg.com/640/480/any?r=0.9178516507833767",
             "https://placeimg.com/640/480/any?r=0.9300320592588625",
             "https://placeimg.com/640/480/any?r=0.8807778235430017"
-        ], creationAt: "2023-02-20T22:05:21.000Z", updatedAt: "2023-02-20T22:05:21.000Z", category: Category(id: 5, name: Name.others, image: "https://placeimg.com/640/480/any?r=0.591926261873231", creationAt:  "2023-02-20T22:05:21.000Z", updatedAt:  "2023-02-20T22:05:21.000Z")))
+        ], creationAt: "2023-02-20T22:05:21.000Z", updatedAt: "2023-02-20T22:05:21.000Z", category: Category(id: 5, name: "Others", image: "https://placeimg.com/640/480/any?r=0.591926261873231", creationAt:  "2023-02-20T22:05:21.000Z", updatedAt:  "2023-02-20T22:05:21.000Z")))
     }
 }
