@@ -16,7 +16,7 @@ struct ContentView: View {
             List {
                 ForEach(products.productsData, id: \.id) { product in
                     NavigationLink {
-                        EmptyView()
+                        ProductDetailView(product: product)
                     } label: {
                         HStack {
                             KFImage(URL(string: product.images[0]))
